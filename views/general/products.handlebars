@@ -1,0 +1,24 @@
+<section>
+<h2>Products</h2>
+</section>
+
+
+
+<table>
+    <tr>
+        <th>
+            <section>
+                {{#each products}}
+                <div class="products">
+                <img src={{this.image}} alt={{this.description}} >
+                <div class="dscp">{{this.category}}</div>
+                <div class="dscp">{{this.description}} </div>
+                <div class="dscp">{{this.price}} </div>
+                <div class="dscp">{{this.reviews}} </div> 
+                </div>
+
+                {{/each}}
+            </section>
+        </th>
+    </tr>
+</table>

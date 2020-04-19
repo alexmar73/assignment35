@@ -1,0 +1,48 @@
+{{!-- <section>
+<h2>Promotions</h2>
+</section> --}}
+{{!-- 
+<img src="/img/home/promotion/watch.jpg" alt="Rose Gold Women's Watch">
+<img src="/img/home/promotion/tablet.jpg" alt="iPad and Stylus Pen">
+<img src="/img/home/promotion/toothbrush.jpg" alt="Quip Electric Toothbrush">
+<img src="/img/home/promotion/airPods.jpg" alt="Pair of AirPod headphones">
+<img src="/img/home/promotion/vacuum.jpg" alt="Cordless Self-Driving Vacuum"> --}}
+
+<section>
+<h2>Browse All Categories</h2>
+</section>
+
+
+
+<section>
+    {{#each categories}}
+        <div class="gallery">
+        <div class="desc">{{this.title}} </div>
+        <a target="_blank" href="img_5terre.jpg">
+           <img src={{this.image}} alt="Rose Gold Women's Watch" >
+        </a>
+        
+        </div>
+
+    {{/each}}
+</section>
+
+<section>
+<h2>Best Sellers</h2>
+</section>
+
+
+
+
+<section>
+    {{#each sellers}}
+        <div class="gallery">
+        <div class="desc">{{this.title}} </div>
+        <a target="_blank" href="img_5terre.jpg">
+           <img src={{this.image}} alt="Rose Gold Women's Watch" >
+        </a>
+        
+        </div>
+
+    {{/each}}
+</section>

@@ -1,0 +1,24 @@
+<div class="success">
+    {{message}}
+</div>
+    <p>
+    <form method="POST" action ="/product/list">
+    Categories: <select name="category" id="category">
+        <option>Please select</option>
+    {{#each categories}}
+        <option>{{this}}</option>
+    {{/each}}
+    </select>
+    
+    <input type="submit" value="Search">
+    </form>
+    </p>
+<section>
+    {{#each products}}
+    <span>
+        {{this.productName}} <a href="/product/edit/{{this._id}}"> Edit </a> <a href="/product/delete/{{this._id}}?method=DELETE"> Delete </a>
+    </span>
+   <br>
+      
+    {{/each}}
+</section>

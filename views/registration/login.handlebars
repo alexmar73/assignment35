@@ -1,0 +1,30 @@
+<div>{{successMessage}}</div>
+{{#each errors}}
+<div>{{this}}</div>
+{{/each}}
+<div class="container">
+    <h1>Sign-In</h1>
+    <form method="POST" action ="/registration/login">
+    <div class="error">
+    {{errorUSR}}
+    </div>
+    <label for="email"><b>Username</b></label>    
+    <input type="text" placeholder="Enter your email" id="email" name="email"> <br>
+
+    <div class="error">
+    {{errorPW}}
+    </div>
+    <label for="password"><b>Password</b></label>    
+    <input type="text" placeholder="Enter your password" id="password" name="password"> <br>
+
+    <button type="submit"> Login </button>
+
+    <p>By continuing, you agree to shopWell's <a href="#">Terms & Conditions</a>.</p>
+
+</form>
+
+<p> New to shopWell? </p> <br>
+
+<p>Create your <a href="/registration">  shopWell account </a> </p>
+
+</div>

@@ -1,0 +1,39 @@
+<div class="success">
+    {{success}}
+</div>
+
+<div class="error">
+    {{error}}
+</div>
+
+<h2>Add Products</h2>
+
+<form method="POST" action="/product/add" enctype="multipart/form-data">
+<label>Product Name</label>
+<input type="text" name="productName" id="productName"><br><br>
+
+<label>Product Price</label>
+<input type="text" name="productPrice" id="productPrice"><br><br>
+
+<label>Product Description</label>
+<input type="text" name="productDescription" id="productDescription"><br><br>
+
+<label>Product Category</label>
+<input type="text" name="productCategory" id="productCategory"><br><br>
+
+<label>Product Quantity</label>
+<input type="number" name="productQuantity" id="productQuantity"><br><br>
+
+<p>Product Bestseller</p>
+<input type="radio" name="productBestseller" id="productBestseller" value="yes">
+<label for="productBestseller">Yes</label>
+<input type="radio" name="productBestseller" id="productBestseller" value="no">
+<label for="productBestseller">No</label>
+</br>
+</br>
+<label>Product Photo</label>
+<input type="file" name="productPhoto" id="productPhoto" > <br><br>
+
+<input type="submit" value="Add Product">
+
+</form>
